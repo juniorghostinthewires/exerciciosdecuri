@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+
+float v1,v2,v3,x;
+
+scanf("%f %f %f", &v1, &v2,&v3); 
+
+if (v1 < v2){ x = v1; v1 = v2; v2 = x; } 
+if (v2 < v3){ x = v2; v2 = v3; v3 = x; } 
+if (v1 < v2){ x = v1; v1 = v2; v2 = x; }
+
+if (v1 >= v2+v3){
+  printf("NAO FORMA TRIANGULO\n");
+}
+else 
+
+if(v1*v1 == v2*v2+v3*v3){
+printf("TRIANGULO RETANGULO\n");
+}
+
+else
+
+if (v1*v1 > v2*v2 +v3*v3){
+printf("TRIANGULO OBTUSANGULO\n");
+}
+
+if (v1*v1 < v2*v2 +v3*v3){
+printf("TRIANGULO ACUTANGULO\n");
+}
+
+if (v1 == v2 && v2 == v3){
+printf("TRIANGULO EQUILATERO\n");
+}     
+else
+
+if (v1 == v2 || v2 == v3) {
+printf("TRIANGULO ISOSCELES\n");
+}
+return 0;
+}
