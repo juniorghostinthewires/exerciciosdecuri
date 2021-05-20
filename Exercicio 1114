@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+//Aquela variavel com historia cinematografica
+int senhadowargames;
+
+senhadowargames= 1;
+
+//enquanto
+while(senhadowargames != 2002)
+{
+//leia
+scanf("%d", &senhadowargames);
+
+//se
+if(senhadowargames == 2002){
+printf("Acesso Permitido\n" );
+return 0;
+}
+
+//senao
+else{
+printf("Senha Invalida\n" );
+}
+}
+return 0;
+}
