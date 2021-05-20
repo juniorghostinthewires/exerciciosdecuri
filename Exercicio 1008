@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int num_func, ht;
+  float s;
+
+scanf("%d %d %f %f", &num_func,&ht, &s );
+
+printf("NUMBER = %d\n",num_func);
+
+printf("SALARY = U$ %.2f\n",(ht*s));
+     
+return 0;
+
+}
