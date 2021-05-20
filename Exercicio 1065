@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+
+//Melhor inicio sempre eh o zero
+int n1,num, cont;
+
+cont=0;
+
+//Para 
+for (n1=1; n1 <= 5; n1++) {
+scanf("%d", &num);
+
+//Se
+if (num%2==0) {
+cont++;
+}
+}
+//Calculo da media de numeros positivos
+
+
+//Apresentacao dos resultados
+
+printf("%d valores pares\n",cont);
+return 0;
+}
