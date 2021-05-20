@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+
+//Miseria = salario.
+
+float miseria; 
+
+scanf("%f", &miseria); 
+
+if(miseria<=2000.0)
+
+printf("Isento\n");
+
+else 
+
+if (miseria <= 3000.0)
+
+printf("R$ %.2f\n", (miseria - 2000.0) * 0.08);
+
+else 
+
+if (miseria <= 4500.0)
+printf("R$ %.2f\n", 1000.0 * 0.08 + (miseria - 3000.0) * 0.18);
+
+else
+printf("R$ %.2f\n", 1000.0 * 0.08 + 1500.0 * 0.18 +
+(miseria - 4500.0) * 0.28);
+
+return 0;
+}
