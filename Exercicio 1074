@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main()
+{
+
+//hora das variaveis
+int N,X,a;
+
+//lendo elas
+scanf ("%d", &N);
+
+//para
+for(a=1;a<=N;a++){
+
+//lendo novamente
+scanf ("%d",&X);
+
+//famoso se
+if(X==0)
+
+//imprima na tela que voce nao vale nada mas eu gosto de vc
+printf("NULL\n");
+
+//senao se
+else if(X<=0&&X%2==0)
+
+//sempre negativo
+printf ("EVEN NEGATIVE\n");
+
+//senao se
+else if(X<=0&&X%2==-1)
+
+//imprima na tela - impar negativo
+printf ("ODD NEGATIVE\n");
+
+//senao se
+else if(X>=0&&X%2==0)
+
+//imprima na tela - sempre positivo
+printf ("EVEN POSITIVE\n");
+
+//senao se
+else if(X>=0&&X%2==1)
+
+//imprima na tela - impar positivo
+printf ("ODD POSITIVE\n");
+
+}
+return 0;
+
+}
