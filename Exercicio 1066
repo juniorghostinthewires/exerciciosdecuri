@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+
+//Declarando as variaveis.
+int a1,n1,n2,n3,n4,n5;
+a1 = 5;
+n2 = 0;
+n3 = 0;
+n4 = 0;
+n5 = 0;
+
+//Enquanto  
+while(a1--){
+scanf("%d", &n1);
+
+if (n1<0)
+n3++;
+
+else if (n1>0)
+n2++;
+
+if (n1%2==0)
+n4++;
+
+else
+n5++;
+}
+
+//apresentacao
+printf("%d valor(es) par(es)\n", n4);
+
+printf("%d valor(es) impar(es)\n", n5);
+
+printf("%d valor(es) positivo(s)\n", n2);
+
+printf("%d valor(es) negativo(s)\n", n3);
+
+return 0;
+}
