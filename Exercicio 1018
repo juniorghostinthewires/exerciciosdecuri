@@ -1,0 +1,56 @@
+include <stdio.h>
+
+
+
+int main() {
+
+int valorinformado,troquinho,cemzao, cinquentao, vintezinho;
+
+int dez,cinco,dois,um;
+
+scanf("%d",&valorinformado);
+
+troquinho = valorinformado;
+
+/*Peixinho*/
+cemzao = troquinho / 100;
+troquinho = troquinho - (cemzao *100);
+
+/*Onça-pintada */
+cinquentao = troquinho / 50;
+troquinho= troquinho - (cinquentao * 50);
+
+/*Mico-leão dourado*/
+vintezinho = troquinho / 20;
+troquinho = troquinho - (vintezinho * 20);
+
+/*Arara */
+dez = troquinho /10;
+troquinho = troquinho -(dez * 10);
+
+/*Garça*/
+cinco = troquinho / 5;
+troquinho = troquinho- (cinco * 5);
+
+/*Tartaruga-marinha*/
+dois = troquinho / 2;
+troquinho = troquinho - (dois * 2);
+
+printf("%d\n",valorinformado);
+
+printf("%d nota(s) de R$ 100,00\n",cemzao);\
+
+printf("%d nota(s) de R$ 50,00\n",cinquentao);
+
+printf("%d nota(s) de R$ 20,00\n",vintezinho);
+
+printf("%d nota(s) de R$ 10,00\n",dez);
+printf("%d nota(s) de R$ 5,00\n",cinco);
+printf("%d nota(s) de R$ 2,00\n",dois);
+printf("%d nota(s) de R$ 1,00\n",troquinho);
+
+
+
+return 0;
+
+}
