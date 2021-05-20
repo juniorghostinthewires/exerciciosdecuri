@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+char p_nomevendedor;
+double salario_fixo, total_de_vendas; 
+
+scanf("%s%lf%lf",&p_nomevendedor,&salario_fixo,&total_de_vendas);
+
+printf("TOTAL = R$ %.2f\n",(salario_fixo+total_de_vendas*0.15));
+
+return 0;
+}
+
