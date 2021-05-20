@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+
+int Tempo, Hora; 
+int HoraparaS, Minuto, Segundo;
+
+HoraparaS=3600;
+scanf("%d", &Tempo);
+
+Hora=(Tempo/HoraparaS);
+Minuto=(Tempo -(HoraparaS*Hora))/60;
+Segundo=(Tempo-(HoraparaS*Hora)-(Minuto*60));
+
+printf("%d:%d:%d\n", Hora,Minuto,Segundo);
+
+return 0;
+
+}
