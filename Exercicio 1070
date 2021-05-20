@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+
+//variaveis time
+int cont,n;
+
+//leitura time
+scanf("%d",&n);
+
+//se
+if(n%2==0)
+n=n+1;
+
+//senao
+else
+n=n;
+
+//apresenta isso daqui oh
+printf("%d\n",n);
+
+//Para
+for(cont=1;cont<=5;cont++)
+
+//Ai voce apresenta isso daqui
+printf("%d\n",n+=2);
+
+return 0;
+}
