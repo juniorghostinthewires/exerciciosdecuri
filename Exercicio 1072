@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+//Declarando as variaveis
+int quantidade, n, in, out, i;
+ 
+//Lendo
+scanf("%d", &quantidade);
+
+//Tudo sempre comeca do zero...
+in = 0;
+out = 0;
+
+//Para
+for(i=0;i<quantidade;i++){
+scanf("%d",&n);
+
+//se esta dentro
+if((n>=10) && (n<=20)){
+in++;}
+
+//senao
+else{
+out++;
+}
+}
+//mostre a seguinte mensagem dos que estao dentro e que estao fora
+printf("%d in\n", in);
+printf("%d out\n",out);
+return 0;
+}
