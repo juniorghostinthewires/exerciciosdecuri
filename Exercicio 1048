@@ -1,0 +1,32 @@
+ #include<stdio.h>
+
+int main(){
+ float s;
+ scanf("%f", &s);
+
+//Empregado explorado
+ if (s <= 400.0)
+
+ printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n", s * 1.15, s * 1.15 - s);
+
+//Empregado semi-escravo
+ else if (s <= 800.0)
+
+ printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n", s * 1.12, s * 1.12 - s);
+
+//Empregado que come boia fria
+ else if (s <= 1200.0)
+
+ printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n", s * 1.10, s * 1.10 - s);
+
+ //Empregado que consegue se alimentar
+ else if (s <= 2000.0)
+ printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n", s * 1.07, s * 1.07 - s);
+
+ //Patrao que mete a paulada no funcionario
+ else
+
+ printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n", s * 1.04, s * 1.04 - s);
+ 
+ return 0;
+}
