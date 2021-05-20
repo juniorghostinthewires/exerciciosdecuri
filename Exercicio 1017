@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() {
+
+float tempog_h,velocidade_media; 
+
+scanf("%f %f", &tempog_h, &velocidade_media);
+
+printf("%.3f\n", (tempog_h*velocidade_media)/12);
+ 
+    return 0;
+}
