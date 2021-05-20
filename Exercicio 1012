@@ -2,10 +2,23 @@
 
 int main(void) {
 
-double raio;
-scanf("%lf",&raio);
+double a,b,c, areatriangulo, areacirculo, areatrapezio, areaquadrado, arearetangulo, pi; 
+pi = 3.14159;
 
-printf("VOLUME = %.3f\n",(4.0/3)*3.14159*(raio*raio*raio));
+scanf("%lf %lf %lf",&a, &b, &c);
 
-return 0;
+areatriangulo = (a*c)/2;
+areacirculo = pi*c*c;
+areatrapezio = ((a + b)*c)/2;
+areaquadrado = b*b;
+arearetangulo = a*b;
+
+  printf("TRIANGULO: %.3f\n", areatriangulo);
+  printf("CIRCULO: %.3f\n", areacirculo);
+  printf("TRAPEZIO: %.3f\n", areatrapezio);
+  printf("QUADRADO: %.3f\n", areaquadrado);
+  printf("RETANGULO: %.3f\n", arearetangulo);
+  
+  return 0;
+  
 }
