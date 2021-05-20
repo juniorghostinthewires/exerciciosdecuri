@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+//Variaveis sendo registradas
+int cont,n;
+
+//Leitura
+scanf("%d",&n);
+
+//Famoso se
+if(n%2==0)
+
+n=n-1;
+
+//Para
+for(cont=1;cont<=n;cont+=2)
+
+//Apresentacao topster
+printf("%d\n",cont);
+
+return 0;
+}
