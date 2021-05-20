@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+//Vamos novamente as variaveis
+int n, cont;
+
+//dando aquela lida...
+scanf("%d", &n);
+
+//Famoso para (joao kleber enginnering)
+for (cont = 1; cont <= n; ++cont)
+{
+
+//glorioso se
+if(cont % 2 == 0){
+
+//mostre isso aqui na tela por gentileza 
+printf("%d^2 = %d\n", cont,(cont*cont));
+}
+}
+return 0;
+}
